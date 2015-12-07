@@ -18,3 +18,7 @@ def hello():
     offset = 28800
     date = time.strftime("%a, %b %d, %Y", time.gmtime(time.time() - offset))
     return render_template('index.html', date = date)
+
+@app.route('/data/<name>')
+def hello_name(name):
+    return "Hi %s" % name
