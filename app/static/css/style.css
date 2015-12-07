@@ -1,0 +1,25 @@
+.header {
+ margin: -20px 0;
+ padding: 30px;
+ background: blue;
+}
+
+.head {
+    text-align: center;
+}
+.main-content{
+    font: 20px;
+    background: red;
+}
+
+#main {
+    padding: 2rem 4rem;
+}
+.center {
+    text-align: center;
+    margin: 10px auto;
+}
+
+body{
+  background: yellow !important;
+}
