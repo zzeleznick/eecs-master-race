@@ -11,6 +11,7 @@ jsondata = [];
 l = [];
 pulse = "on";
 img = c.getImageData(0, 0, b.width, b.height);
+pencil();
 
 function iter() {
     if (l.length < 10) {
@@ -250,12 +251,13 @@ function save() {
 </script>
 
         <center>
-            <button id='6' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="line()">Line</button>
             <button id='7' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="pencil()">Pencil</button>
+            <button id='6' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="line()">Line</button>
             <button id='2' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="rectangle()">Rectangle</button>
             <button id='5' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="circle()">Circle</button>
             <button id='9' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="spray()">Spray</button>
             <button id='8' style="background-color:#d3d3d3" onmouseover="white(id)" onmouseout="reset(id)" onclick="erase()">Eraser</button>
+
             <form name="fo" action="">Fill or Stroke?
                 <input type="radio" name="sex" onclick=fill() value="1">fill
                 <input type="radio" name="sex" onclick=strok() value="0" checked="checked">border
@@ -281,7 +283,7 @@ function save() {
 <td><div onclick = "color('#ffff00')" style ="width:20px;height:20px;background-color:#ffff00"></div></td>
 <td><div onclick = "color('#ffff99')" style ="width:20px;height:20px;background-color:#ffff99"></div></td>
 <td><div onclick = "color('#003300')" style ="width:20px;height:20px;background-color:#003300"></div></td>
-<td><div onclick = "color('#555000')" style ="width:20px;height:20px;background-color:#555000"></div></td>
+<td><div onclick = "color('#ffffff')" style ="width:20px;height:20px;background-color:#ffffff"></div></td>
 <tr>
 <td><div onclick = "color('#00ff00')" style ="width:20px;height:20px;background-color:#00ff00"></div></td>
 <td><div onclick = "color('#99ff99')" style ="width:20px;height:20px;background-color:#99ff99"></div></td>
