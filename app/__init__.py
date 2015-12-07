@@ -19,6 +19,10 @@ def hello():
     date = time.strftime("%a, %b %d, %Y", time.gmtime(time.time() - offset))
     return render_template('index.html', date = date)
 
+@app.route('/canvas/<name>')
+def canvas(name):
+    return render_template('canvas.html', name = name)
+
 @app.route('/data/<name>')
 def hello_name(name):
     return "Hi %s" % name
